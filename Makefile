@@ -52,3 +52,4 @@ clean:
 	del /Q $(OBJ_DIR)\*.d
 	rmdir /s /q $(OBJ_DIR)
 .PHONY: all clean dirs
+.PRECIOUS: $(OBJ_DIR)/%.o $(OBJ_DIR)/main/%.o
